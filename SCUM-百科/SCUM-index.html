@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap-4.css" />
+		<link rel="stylesheet" href="css/Font Awesome.css" />
+		<link rel="stylesheet" href="css/SCUM-index.css" />
+		<script type="text/javascript" src="js/Jquery.js"></script>
+		<script type="text/javascript" src="js/popper.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
+		<script type="text/javascript" src="js/SCUM-index.js"></script>
+	</head>
+	<style type="text/css">
+
+	</style>
+
+	<body class="bg-dark">
+
+		<!--导航栏部分-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar  navbar-expand-md  fixed-top " style="background-color: rgba(33,37,41,0.8);">
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="SCUM.html" class="text-white ">
+							<h1><img src="img/LOGO.png" width="40px" />SCUM</h1>
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span><img src="img/下箭头.png" width="40px"></span>
+  </button>
+						<div class="collapse navbar-collapse" id="collapsibleNavbar">
+							<ul class="navbar-nav">
+
+								<li class="nav-item">
+									<a class="nav-link text-white " href="SCUM-index.html">&nbsp;&nbsp;&nbsp;&nbsp;首页&nbsp;&nbsp;&nbsp;&nbsp;</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link text-white " href="SCUM-数据库·.html">&nbsp;&nbsp;&nbsp;&nbsp;数据库</a>
+								</li>
+								<li class="nav-item dropdown">
+
+									<a class="nav-link text-white dropdown-toggle" href="SCUM-数据库·.html" id="navbardrop" data-toggle="dropdown"></a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item text-white" href="SCUM-地图-index.html">地图</a>
+										<a class="dropdown-item" href="#">武器</a>
+										<a class="dropdown-item" href="#">武器伤害</a>
+										<a class="dropdown-item" href="#">护甲</a>
+										<a class="dropdown-item" href="#">载具</a>
+										<a class="dropdown-item" href="#">医疗</a>
+										<a class="dropdown-item" href="#">食物</a>
+										<a class="dropdown-item" href="#">动物</a>
+										<a class="dropdown-item" href="#">技能</a>
+										<a class="dropdown-item" href="#">代谢</a>
+									</div>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link text-white" href="SCUM-爆料与资讯.html">&nbsp;&nbsp;&nbsp;&nbsp;爆料与资讯&nbsp;&nbsp;&nbsp;&nbsp;</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="SCUM-原创专栏.html">&nbsp;&nbsp;&nbsp;&nbsp;原创专栏&nbsp;&nbsp;&nbsp;&nbsp;</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link text-white " href="SCUM-命令合集.html">&nbsp;&nbsp;&nbsp;&nbsp;命令合集</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link text-white dropdown-toggle" href="SCUM-命令合集.html" id="navbardrop" data-toggle="dropdown"></a>
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="#">管理员</a>
+										<a class="dropdown-item" href="#">武器</a>
+										<a class="dropdown-item" href="#">服饰</a>
+										<a class="dropdown-item" href="#">食物</a>
+										<a class="dropdown-item" href="#">杂物</a>
+										<a class="dropdown-item" href="#">载具</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="SCUM-SCUM社区.html">SCUM交流社区</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white " href="SCUM-数据库·.html">&nbsp;&nbsp;&nbsp;&nbsp;人气up&nbsp;&nbsp;&nbsp;&nbsp;</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white " href="SCUM-数据库·.html">&nbsp;&nbsp;&nbsp;&nbsp;视频专区&nbsp;&nbsp;&nbsp;&nbsp;</a>
+								</li>
+								<li class="float-end">
+									 <div class="input-group mt-2 mb-2">
+      <div class="input-group-prepend">
+        <button type="button" class="btn btn-outline-secondary dropdown-toggle bg-dark" data-toggle="dropdown"></button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="SCUM-地图-index.html">地图</a>
+          <a class="dropdown-item" href="SCUM-数据库·.html">数据库</a>
+          <a class="dropdown-item" href="SCUM-原创专栏.html">专栏</a>
+        </div>
+      </div>
+      <input type="text" class="form-control" placeholder="请输入">
+    </div>
+  </form>
+</div>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+
+		</div>
+
+		<!--轮播图部分-->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12">
+					<div id="demo" class="carousel slide" data-ride="carousel">
+
+						<!-- 指示符 -->
+						<ul class="carousel-indicators">
+							<li data-target="#demo" data-slide-to="0" class="active"></li>
+							<li data-target="#demo" data-slide-to="1"></li>
+							<li data-target="#demo" data-slide-to="2"></li>
+							<li data-target="#demo" data-slide-to="3"></li>
+							<li data-target="#demo" data-slide-to="4"></li>
+						</ul>
+
+						<!-- 轮播图片 -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="img/SCUM-Demo (4).jpg">
+								<div class="carousel-caption">
+									<h3>欢迎来到SCUM社区</h3>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="img/SCUM-Demo (2).jpg">
+								<div class="carousel-caption">
+									<h3>欢迎来到SCUM社区</h3>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="img/SCUM-Demo (1).jpg">
+								<div class="carousel-caption">
+									<h3>欢迎来到SCUM社区</h3>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="img/SCUM-Demo (3).jpg">
+								<div class="carousel-caption">
+									<h3>欢迎来到SCUM社区</h3>
+
+								</div>
+							</div>
+							<div class="carousel-item">
+								<img src="img/SCUM-Demo (1).png">
+								<div class="carousel-caption">
+									<h3>欢迎来到SCUM社区</h3>
+								</div>
+							</div>
+						</div>
+
+						<!-- 左右切换按钮 -->
+						<a class="carousel-control-prev" href="#demo" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#demo" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<br />
+		<!--正文-->
+		<!--SCUM标题-1-->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12">
+					<div class="box-1 bg-dark">
+						<h1 class="text-white text-center font-weight-bold">一个<font class="text-danger">SCUM</font>在线查寻数据网站</h1>
+					</div>
+				</div>
+
+				<div class="col-lg-12 col-sm-12">
+					<div class="box-1 bg-dark">
+						<h6 class="text-white text-center font-weight-bold">SCUMLZ.COM其中包含 Scum 教程，包括初学者教程、武器教程、基础构建教程等。<br /> 我们还有一系列人渣地图，包括掩体位置、加油站位置和汽车生成位置。 <br />不仅如此，还可以查看我们的数据库范围，包括带有武器损坏统计数据的物品、食物和武器。 </h1>
+					</div>
+				</div>
+			</div>
+		</div><br />
+<!--scum-内容-1-->
+<div class="container">
+	<!--1-->
+	<div class="row">
+		<div class="col-lg-2 col-sm-4 col-md-4">
+			<div class="card">
+						<a href="SCUM-maps/SCUM-map-5.html">
+						<img class="card-img-top img-thumbnail"  src="img/SCUM-icon-1.png" />
+						<div class="card-body bg-dark">
+							<br />
+							<h4 class="card-title text-center text-white">武器伤害</h4>
+							</a> 
+						</div>
+					</div>
+		</div>
+		<div class="col-lg-2 col-sm-4 col-md-4">
+			<div class="card">
+						<a href="SCUM-maps/SCUM-map-5.html">
+						<img class="card-img-top img-thumbnail"  src="img/SCUM-icon-2.png" />
+						<div class="card-body bg-dark">
+							<br />
+							<h4 class="card-title text-center text-white">社区</h4>
+							</a> 
+						</div>
+					</div>
+		</div>
+		<div class="col-lg-2 col-sm-4 col-md-4">
+			<div class="card">
+						<a href="SCUM-maps/SCUM-map-5.html">
+						<img class="card-img-top img-thumbnail"  src="img/SCUM-icon-3.png" />
+						<div class="card-body bg-dark">
+							<br />
+							<h4 class="card-title text-center text-white">命令</h4>
+							</a> 
+						</div>
+					</div>
+		</div>
+		<div class="col-lg-2 col-sm-4">
+			<div class="card">
+						<a href="SCUM-maps/SCUM-map-5.html">
+						<img class="card-img-top img-thumbnail"  src="img/SCUM-icon-4.png" />
+						<div class="card-body bg-dark">
+							<br />
+							<h4 class="card-title text-center text-white">官方同人漫画</h4>
+							</a> 
+						</div>
+					</div>
+		</div>
+		<div class="col-lg-2 col-sm-4">
+			<div class="card">
+						<a href="SCUM-maps/SCUM-map-5.html">
+						<img class="card-img-top img-thumbnail"  src="img/SCUM-icon-5.png" />
+						<div class="card-body bg-dark">
+							<br />
+							<h4 class="card-title text-center text-white">教程</h4>
+							</a> 
+						</div>
+					</div>
+		</div>
+		<div class="col-lg-2 col-sm-4">
+			<div class="card">
+						<a href="SCUM-maps/SCUM-map-5.html">
+						<img class="card-img-top img-thumbnail"  src="img/SCUM-icon-6.png" />
+						<div class="card-body bg-dark">
+							<br />
+							<h4 class="card-title text-center text-white">医疗</h4>
+							</a> 
+						</div>
+					</div>
+		</div>
+		
+	</div><br/>
+	<!--2-->
+	<div class="row">
+		<div class="col-lg-2 col-sm-4">
+			<div class="card">
+						<a href="SCUM-maps/SCUM-map-5.html">
+						<img class="card-img-top img-thumbnail"  src="img/SCUM-icom-7.png" />
+						<div class="card-body bg-dark">
+							<br />
+							<h4 class="card-title text-center text-white">地图</h4>
+							</a> 
+						</div>
+					</div>
+		</div>
+		<div class="col-lg-2 col-sm-4">
+			<div class="card">
+						<a href="SCUM-maps/SCUM-map-5.html">
+						<img class="card-img-top img-thumbnail"  src="img/SCUM-icon-8.png" />
+						<div class="card-body bg-dark">
+							<br />
+							<h4 class="card-title text-center text-white">技能</h4>
+							</a> 
+						</div>
+					</div>
+		</div>
+		<div class="col-lg-2 col-sm-4">
+			<div class="card">
+						<a href="SCUM-maps/SCUM-map-5.html">
+						<img class="card-img-top img-thumbnail"  src="img/SCUM-icon-9.png" />
+						<div class="card-body bg-dark">
+							<br />
+							<h4 class="card-title text-center text-white">彩蛋</h4>
+							</a> 
+						</div>
+					</div>
+		</div>
+		<div class="col-lg-2 col-sm-4">
+			<div class="card">
+						<a href="SCUM-maps/SCUM-map-5.html">
+						<img class="card-img-top img-thumbnail"  src="img/SCUM-icon-10.png" />
+						<div class="card-body bg-dark">
+							<br />
+							<h4 class="card-title text-center text-white">新闻</h4>
+							</a> 
+						</div>
+					</div>
+		</div>
+		<div class="col-lg-2 col-sm-4">
+			<div class="card">
+						<a href="SCUM-maps/SCUM-map-5.html">
+						<img class="card-img-top img-thumbnail"  src="img/SCUM-icon-11.png" />
+						<div class="card-body bg-dark">
+							<br />
+							<h4 class="card-title text-center text-white">代谢</h4>
+							</a> 
+						</div>
+					</div>
+		</div>
+		<div class="col-lg-2 col-sm-4">
+			<div class="card">
+						<a href="SCUM-maps/SCUM-map-5.html">
+						<img class="card-img-top img-thumbnail"  src="img/SCUM-icon-12.png" />
+						<div class="card-body bg-dark">
+							<br />
+							<h4 class="card-title text-center text-white">地图</h4>
+							</a> 
+						</div>
+					</div>
+		</div>
+		
+	</div><br/>
+</div>
+
+<!--SCUM标题-2-->
+       <div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12">
+					<div class="box-1 bg-dark">
+						<h1 class="text-white text-center font-weight-bold"><font class="text-danger">SCUM</font>游戏教程</h1>
+					</div>
+				</div>
+			</div>
+		</div><br />
+		<!--新手教程-->
+			<div class="container-fluid" >
+			<div class="row">
+				
+				<div class="col-lg-4 col-sm-4">
+					<div class="card">
+						<video width="100%" autoplay="autoplay" muted="muted"  class=" card-img-top " controls>
+  <source src="img/新建文件夹/SCUM-VIDO-1.webm" type="video/webm">
+  	
+</video>
+
+						<div class="card-body bg-dark">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-4">
+					<div class="card">
+						<video width="100%" autoplay="autoplay" muted="muted"   class=" card-img-top " controls>
+  <source  src="img/新建文件夹/SCUM-VIDO-2.webm" type="video/webm">
+  	
+</video>
+
+						<div class="card-body bg-dark">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-4">
+					<div class="card">
+						<video width="100%" autoplay="autoplay" muted="muted" class=" card-img-top " controls>
+  <source src="img/新建文件夹/SCUM-VIDO-4.webm" type="video/webm">
+  	
+</video>
+
+						<div class="card-body bg-dark">
+							
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div><br />
+			
+			<!--SCUM标题-3-->
+       <div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12">
+					<div class="box-1 bg-dark">
+						<h1 class="text-white text-center font-weight-bold">来自开发人员的<font class="text-danger">爆料</font></h1>
+					</div>
+				</div>
+			</div>
+		</div><br />
+		
+		<!--暴料-->
+		<div class="container">
+			<ul>
+				<li>
+					<a href="https://twitter.com/dedaPong"><h6 class="text-light"><img class="rounded-circle" src="img/SCUM-BL.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tomislav Pongrac</h6></a>
+
+						</li>
+						<br />
+						<li class="border border-light"></li>
+						<br />
+						<li>
+							<a href="https://twitter.com/dedaPong">
+								<h6 class="text-light"><img src="img/SCUM-BL.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tomislav Pongrac&nbsp;&nbsp;&nbsp;&nbsp;<font class="text-white">12月10日</font></h6></a>
+							<a class="text-light">A thermometer+ compass clip done by our newly employed 3D modeler Ismir. He has put a lot of overtime hours into this model, still catching up with the rest of the gang, but I'm sure you'll be seeing lots of cool things from him in the future</a>
+						</li>
+						<br />
+						<li class="border border-light"></li>
+						<br />
+						<li>
+							<a href="https://twitter.com/dedaPong">
+								<h6 class="text-light"><img src="img/SCUM-BL.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tomislav Pongrac&nbsp;&nbsp;&nbsp;&nbsp;<font class="text-white">12月10日</font></h6></a>
+							<a class="text-light">Small improvements of the snow. No programmers were used on this, they are all doing more important things. Like making a retro pixelated game out of Scum.</a>
+						</li>
+						<br />
+						<li class="border border-light"></li>
+						<br />
+						<li>
+							<a href="https://twitter.com/dedaPong">
+								<h6 class="text-light"><img src="img/SCUM-BL.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tomislav Pongrac&nbsp;&nbsp;&nbsp;&nbsp;<font class="text-white">12月9日</font></h6></a>
+							<a class="text-light">Here comes Santa Claus, here comes Santa Claus,<br /> right down Santa Claus Lane!<br /> Vixen and Blitzen and all his reindeer pulling on the reins.<br /> Bells are ringing, children singing, all is merry and bright<br /> So hang your stockings and say your prayers, 'cause Santa Claus comes tonight</a>
+						</li>
+						<br />
+						<!--更多下拉-->
+						<li>
+							<div class="box-2" id="more" data-toggle="collapse" href="#collapseOne">
+								<a class="text-light" data-toggle="collapse" href="#collapseOne">更多</a>
+							</div>
+						</li>
+						</ul>
+						<ul id="collapseOne" class="collapse" data-parent="#more">
+							<br />
+							<li>
+								<a href="https://twitter.com/dedaPong">
+									<h6 class="text-light"><img src="img/SCUM-BL.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tomislav Pongrac&nbsp;&nbsp;&nbsp;&nbsp;<font class="text-white">12月9日</font></h6></a>
+								<a class="text-light">Christmas came early this year. Thanks @Wasabi_stream for a wonderful T-shirt</a>
+							</li>
+							<br />
+							<li class="border border-light"></li>
+							<br />
+							<li>
+								<a href="https://twitter.com/dedaPong">
+									<h6 class="text-light"><img src="img/SCUM-BL.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tomislav Pongrac&nbsp;&nbsp;&nbsp;&nbsp;<font class="text-white">12月8日</font></h6></a>
+								<a class="text-light">Here are a few more bugs for you :)<br /> You may notice them in bright and/or smelly places, or between your teeth if you drive a motorcycle without a helmet.<br /> A piece of advice- try to maintain your personal hygiene.</a>
+							</li>
+
+							<br />
+							<li class="border border-light"></li>
+							<br />
+							<li>
+								<a href="https://twitter.com/dedaPong">
+									<h6 class="text-light"><img src="img/SCUM-BL.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tomislav Pongrac&nbsp;&nbsp;&nbsp;&nbsp;<font class="text-white">12月7日</font></h6></a>
+								<a class="text-light">Tired of being too hot to handle?Boy, oh boy we have the coolest thing for you!<br /> The temperature difference in the sun and in the shade soon to be a real thing. This is what true survival is all about. Only in SCUM, avoid the solar radiation and be the coolest player on the server</a>
+							</li>
+							<li class="border border-light"></li>
+							<br />
+							<br />
+							<li>
+								<a href="https://twitter.com/dedaPong">
+									<h6 class="text-light"><img src="img/SCUM-BL.jpg" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tomislav Pongrac&nbsp;&nbsp;&nbsp;&nbsp;<font class="text-white">12月6日</font></h6></a>
+								<a class="text-light">This is what Mad max would look like if it was filmed on the Balkans.Hope you like future cars, they are very reliable but still go on diesel. Scum is set in the universe where people realized that electric cars are not sustainable.</a>
+							</li>
+							<br />
+							<!--更多下拉-->
+							<li>
+								<div class="box-2" id="more" data-toggle="collapse" href="#collapseOne">
+									<a class="text-light" data-toggle="collapse" href="#collapseOne">收起</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<!--SCUM标题-4-->
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12 col-sm-12">
+								<div class="box-1 bg-dark">
+									<h1 class="text-white text-center font-weight-bold">SCUM人气<font class="text-danger">up</font></h1>
+								</div>
+							</div>
+						</div>
+					</div><br />
+					<!--UP主-->
+					<div class="container">
+						<div class="row">
+							<div class="col-4">
+								<div class="row">
+									<div class="col-2">
+
+									</div>
+									<div class="col-8">
+										<a href="https://space.bilibili.com/34747573/?spm_id_from=333.999.0.0">
+											<div class="card">
+												<img class="card-img-top" href="" src="img/SCUM-UP-1.png" />
+												<div class="card-body bg-dark">
+													<h4 class="card-title text-white">SCUM_JK</h4>
+													<p class="card-text text-white"></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-2">
+
+									</div>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="row">
+									<div class="col-2">
+
+									</div>
+									<div class="col-8">
+										<a href="https://space.bilibili.com/6128489/?spm_id_from=333.999.0.0">
+											<div class="card">
+												<img class="card-img-top" href="" src="img/SCUM-UP -2.png" />
+												<div class="card-body bg-dark">
+													<h4 class="card-title text-white">&nbsp;&nbsp;&nbsp;雨尚初晨</h4>
+													<p class="card-text text-white"></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-2">
+
+									</div>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="row">
+									<div class="col-2">
+
+									</div>
+									<div class="col-8">
+										<a href="https://space.bilibili.com/1064888735/?spm_id_from=333.999.0.0">
+											<div class="card">
+												<img class="card-img-top" href="" src="img/SCUM-UP-3.png" />
+												<div class="card-body bg-dark">
+													<h4 class="card-title text-white">&nbsp;&nbsp;&nbsp;淮安忆SCUM</h4>
+													<p class="card-text text-white"></p>
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="col-2">
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<br />
+					<!--感谢-->
+					<div class="jumbotron" style="background-image: url(img/SCUM-JM-1.jpg); width: 100%;">
+						<div class="container">
+							<div class="row">
+								<div class="col-6">
+									<img src="img/scumcharacter.png" />
+								</div>
+								<div class="col-2">
+
+								</div>
+								<div class="col-4">
+									<br />
+									<br />
+									<br />
+									<br />
+									<br />
+									<br />
+									<br />
+									<br />
+									<br />
+									<br />
+									<br />
+									<br />
+									<h1 class="text-white">表达你的爱</h1>
+									<br />
+									<h6 class="text-light">让我们帮助SCUMLZ.COM 继续帮助降低服务器成本，每一点都有帮助 🙂 </h6>
+									<br />
+									<br />
+								<!--拟态框触发按钮-->	<button class="btn btn-lg" data-toggle="modal" data-target="#myModal" style="padding: 20px; background-color: #81d742;"><h1 class="text-white">捐❤</h1></button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<br />
+					<br />
+					<br />
+					<!--反馈菜单-->
+					<div class="container">
+						<br />
+						<br />
+						<div class="row">
+							<div class="col-lg-1 col-sm-0">
+
+							</div>
+							<div class="col-lg-10 col-sm-12">
+								<div class="row">
+									<div class="col-lg-6 col-sm-12">
+										<h1 class="text-white">有疑问吗?&nbsp;&nbsp;&nbsp;&nbsp;来<font class="text-danger">反馈</font>吧！</h1><br />
+										<a class="text-light"> 请随时使用联系表格与我们联系。<br />
+										<br />
+											 如果您有教程请求，请务必提供您的真实电子邮件，以便我们在教程上线后通知您。<br /> 
+											 <br />
+										 您可以通过反馈，您也可以在 B站 上找到我们！</a>
+										
+									</div>
+									<div class="col-lg-2 col-sm-0">
+										
+									</div>
+									<div class="col-lg-4 col-sm-12">
+                                      <form action="/action_page.php" class="bg-dark-TM" >
+     <label for="email">Email:</label>
+     <input type="text" class="form-control border-1 border-danger bg-dark-TM" id="name" placeholder="Enter name" >
+    <br />
+    <input type="email" class="form-control border-1 border-danger bg-dark-TM" id="email" placeholder="Enter email" >
+<br />
+<textarea type="text" class="form-control border-1 border-danger bg-dark-TM" id="text" placeholder="提出你宝贵的意见" ></textarea><br>
+    <button type="submit" class="btn btn-danger" disabled>Submit</button>
+  </form>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-1 col-sm-0">
+
+							</div>
+						</div>
+					</div>
+<br />
+					<br />
+					<br />
+					<!--拟态框-->
+					<div class="container">
+  <!-- 模态框 -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+   
+        <!-- 模态框头部 -->
+        <div class="modal-header">
+          <h4 class="modal-title">感谢您的支持</h4>
+        </div>
+   
+        <!-- 模态框主体 -->
+        <div class="modal-body">
+          该模块还未开发
+        </div>
+   
+        <!-- 模态框底部 -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+        </div>
+   
+      </div>
+    </div>
+  </div>
+  
+</div>
+					<!--回到顶部-->
+					<div class="container-fluid">
+						<div class="col-lg-0">
+							<ul class="navbar-nav fixed-bottom">
+								<li class="nav-item">
+									<a class="nav-link " href="#top"><img src="img/回到顶部.png" width="50px"></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--尾栏-->
+					<div class="container-fluid bg-black ">
+						<br />
+						<div class="row">
+							<div class="col-lg-3 col-sm-0">
+
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<ul>
+									<li>
+										<a class="text-white">SCUN(QQ)交流群：111111111</a>
+									</li>
+									<li>
+										<a class="text-white">作者(QQ)：2523748338</a>
+									</li>
+									<li>
+										<a class="text-white">投稿(WX)：</a>
+									</li>
+									<li>
+										<a class="text-white">本网站仅供学习交流</a>
+									</li>
+								</ul>
+							</div>
+							<div class="col-lg-3 col-sm-6">
+								<a data-toggle="tooltip" data-placement="right" title="扫一扫关注公众号"><img src="img/微信-二维码.jpg" width="100px" /></a>
+								<a><img src="img/scumcharacter.png" width="100px" /></a>
+							</div>
+							<div class="col-lg-3 col-sm-0">
+
+							</div>
+						</div>
+						<br />
+						<div class="row">
+							<div class="col-lg-4 col-sm-12">
+
+							</div>
+							<div class="col-lg-4 col-sm-12">
+
+								<li>
+									<a class="text-white">版权所有：狗子&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;如有侵权请扫二维码联系作者
+									</a>
+								</li>
+							</div>
+							<div class="col-lg-4 col-sm-12">
+
+							</div>
+						</div>
+						<br />
+					</div>
+
+	</body>
+
+</html>
